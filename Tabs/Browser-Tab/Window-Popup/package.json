@@ -1,0 +1,14 @@
+{
+  "name": "Javascript-Window-Pop-Up",
+  "version": "1.0.0",
+  "description": "Pop-up a window in new tab, when anchor tag is clicked.",
+  "scripts": {
+    "start": "parcel ./*.html ",
+    "build": "parcel build ./*.html  --dist-dir ./build"
+  },
+  "author": "Kendrah Lonetsamp",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
