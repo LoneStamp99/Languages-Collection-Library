@@ -53,24 +53,6 @@ window.addEventListener('unload', function() {
   <button onclick="copyCodeToClipboard()">Copy</button>
 </div>
 
-<script>
-function copyCodeToClipboard() {
-  var codeBlock = document.getElementById('code-block');
-  var range = document.createRange();
-  range.selectNode(codeBlock);
-  window.getSelection().removeAllRanges();
-  window.getSelection().addRange(range);
-  document.execCommand('copy');
-  window.getSelection().removeAllRanges();
-
-  // Change button text temporarily to indicate success
-  var copyButton = document.querySelector('.code-container button');
-  copyButton.innerText = 'Copied!';
-  setTimeout(function() {
-    copyButton.innerText = 'Copy';
-  }, 1500);
-}
-</script>
 
 ### Usage
 
