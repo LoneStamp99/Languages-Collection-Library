@@ -2,7 +2,6 @@
 
 ### Lists
 
-```
 - Tab
 - Image
 - Video
@@ -24,4 +23,3 @@
 - Responsive Design
 - Parralax Scrolling
 - Accessibility 
-```
