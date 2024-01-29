@@ -1,14 +1,14 @@
 function updateTitle() {
   const title = document.querySelector('title');
   const currentUrl = window.location.href;
-  const siteName = 'My Site'; // replace 'My Site' with your site name
-  const newTitle = `Go back to ${siteName}.`;
+  const siteName = 'Elizabeth Vasilenko'; // replace 'My Site' with your site name
+  const newTitle = `Go back to ${siteName}`;
   title.innerHTML = newTitle; // update the title element with the new title text
   window.history.pushState({}, '', currentUrl); // save the current URL and state to the history stack
 }
 
 function displayMessage() {
-  const originalSiteName = 'My Site'; // replace 'My Site' with your site name
+  const originalSiteName = 'Elizabeth Vasilenko'; // replace 'My Site' with your site name
   const message = 'Your back!'; // replace 'Come back soon!' with the message you want to display
   const title = document.querySelector('title');
 
@@ -17,7 +17,7 @@ function displayMessage() {
 
   // Set a timeout to restore the original site name after 3 seconds
   setTimeout(function() {
-    title.innerHTML = `Go back to ${originalSiteName}.`;
+    title.innerHTML = `${originalSiteName}`;
   }, 3000);
 }
 
